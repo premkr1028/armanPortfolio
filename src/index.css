@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root {
+  --grey: #808080;
+  --dark-grey: #2F2F2F;
+  --lime: #C7F000;
+  --lime-soft: #D9FF4A;
+  --white: #FFFFFF;
+  --linen: #F9F5E5;
+  --pac: 'Pacifico'
+}
+
+:root {
+  --bg-color: #0F0F0F;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3B3B3;
+  --accent-color: #3B82F6;
+  --card-bg: #1A1A1A;
+  --text-pa: "Lilita One", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar */
+}
+
+* {
+  font-family: 'poppins';
+
+}
+
+#cover {
+  background: var(--bg-color);
+
+}
+
+nav {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.homeText {
+  color: var(--text-secondary);
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.last {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-primary);
+
+}
+
+.workText {
+  color: var(--text-secondary);
+}
+
+.line {
+  background: var(--text-secondary);
+}
+
+.bgImage {
+  perspective: 300px;
+  opacity: 3%;
+  scale: 2.5;
+
+  img {
+
+    object-fit: cover;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    animation: rotate3D 5s linear infinite;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: rotateX(40deg);
+  }
+}
+
+
+.texts {
+
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mail {
+  font-family: "Poppins";
+}
+
+.navUnder {
+  padding: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.availWork {
+  /* From https://css.glass */
+  background: rgba(4, 201, 44, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(4, 201, 44, 0.33);
+}
+
+.taggg h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.downArrow .circle {
+
+  border-radius: 50%;
+  margin: 50px auto;
+
+
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up by 20 pixels */
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* work section */
+.achievments {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.showWork {
+  width: 100vw;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.boldText p {
+  font-size: 100px;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.talkBtn {
+  position: relative;
+  overflow: hidden;
+}
+
+.talkBtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.talkBtn:hover {
+  color: #0F0F0F;
+  border-color: gray;
+}
+
+.talkBtn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* keep text above overlay */
+.talkBtn>* {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.arr {
+  animation: moveLeftRight 2s infinite ease-in-out;
+}
+
+.contRegBtn {
+  background: rgba(105, 105, 105, 0.315);
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(105, 105, 105, 0.315);
+
+  font-family: "Staatliches", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.armanText{
+  font-family: serif;
+  font-size: 100px;
+  opacity: 0.05;
+}
