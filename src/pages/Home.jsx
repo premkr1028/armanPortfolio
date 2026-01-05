@@ -36,12 +36,12 @@ const Home = () => {
                 <div className="editingTools flex items-center">
                   <img
                     className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]"
-                    src="/src/assets/images/pr.webp"
+                    src="\public\images\pr.jpg"
                     alt="Premiere Pro"
                   />
                   <img
                     className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]"
-                    src="/src/assets/images/ae.webp"
+                    src="\public\images\ae.jpg"
                     alt="After Effects"
                   />
                 </div>
@@ -73,9 +73,9 @@ const Home = () => {
             {/* SHORT VIDEOS */}
             <div className="vids w-full flex gap-4 overflow-x-auto lg:overflow-visible justify-start lg:justify-end">
               {[
-                "/src/assets/videos/0105.mp4",
-                "/src/assets/videos/0105(1).mp4",
-                "/src/assets/videos/0105(2).mp4",
+                "/public/videos/0105.mp4",
+                "/public/videos/0105(1).mp4",
+                "/public/videos/0105(2).mp4",
               ].map((src, i) => (
                 <div
                   key={i}
@@ -94,7 +94,7 @@ const Home = () => {
                   loop
                   muted
                   playsInline
-                  src="/src/assets/videos/0105(3).mp4"
+                  src="/public/videos/0105(3).mp4"
                 />
               </div>
             </div>
@@ -104,7 +104,7 @@ const Home = () => {
         {/* DOWN ARROW */}
         <div className="downArrow flex w-full justify-center my-8">
           <div className="circle w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] border-[3px] lg:border-[4px] border-white rounded-full p-3">
-            <img src="/src/assets/images/downArr.png" alt="Scroll Down" />
+            <img src="\public\images\downArr.png" alt="Scroll Down" />
           </div>
         </div>
       </div>
