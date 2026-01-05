@@ -36,12 +36,12 @@ const Home = () => {
                 <div className="editingTools flex items-center">
                   <img
                     className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]"
-                    src="\public\images\pr.jpg"
+                    src="\images\pr.jpg"
                     alt="Premiere Pro"
                   />
                   <img
                     className="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]"
-                    src="\public\images\ae.jpg"
+                    src="\images\ae.jpg"
                     alt="After Effects"
                   />
                 </div>
@@ -60,7 +60,7 @@ const Home = () => {
 
             {/* Decorative elements – desktop only */}
             <div className="drawnCircle hidden lg:block absolute w-[100px] top-7 right-20">
-              <img src="/src/assets/images/whiteCircle.png" alt="" />
+              <img src="/images/whiteCircle.png" alt="" />
             </div>
 
             <div className="absolute top-6 hidden lg:block">
@@ -81,7 +81,7 @@ const Home = () => {
                   key={i}
                   className="overflow-hidden h-[240px] lg:h-[300px] w-[135px] lg:w-[168.75px] bg-black rounded-xl"
                 >
-                  <video autoPlay loop muted playsInline src={src} />
+                  <video controls src={src} />
                 </div>
               ))}
             </div>
@@ -90,10 +90,7 @@ const Home = () => {
             <div className="longVideo">
               <div className="h-[140px] lg:h-[168.75px] w-[260px] lg:w-[300px] bg-black rounded-xl overflow-hidden">
                 <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                  controls
                   src="/videos/0105(3).mp4"
                 />
               </div>
