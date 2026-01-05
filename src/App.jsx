@@ -61,7 +61,7 @@ const App = () => {
         className="fixed top-[30px] left-[-300px] scale-0 w-[60px] h-[60px] rounded-full overflow-hidden z-50"
       >
         <img
-          src="/public/images/armanLogo.jpg"
+          src="/images/armanLogo.jpg"
           alt="logo"
           className="w-full h-full object-cover"
         />

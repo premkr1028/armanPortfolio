@@ -73,9 +73,9 @@ const Home = () => {
             {/* SHORT VIDEOS */}
             <div className="vids w-full flex gap-4 overflow-x-auto lg:overflow-visible justify-start lg:justify-end">
               {[
-                "/public/videos/0105.mp4",
-                "/public/videos/0105(1).mp4",
-                "/public/videos/0105(2).mp4",
+                "/videos/0105.mp4",
+                "/videos/0105(1).mp4",
+                "/videos/0105(2).mp4",
               ].map((src, i) => (
                 <div
                   key={i}
@@ -94,7 +94,7 @@ const Home = () => {
                   loop
                   muted
                   playsInline
-                  src="/public/videos/0105(3).mp4"
+                  src="/videos/0105(3).mp4"
                 />
               </div>
             </div>
@@ -104,7 +104,7 @@ const Home = () => {
         {/* DOWN ARROW */}
         <div className="downArrow flex w-full justify-center my-8">
           <div className="circle w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] border-[3px] lg:border-[4px] border-white rounded-full p-3">
-            <img src="\public\images\downArr.png" alt="Scroll Down" />
+            <img src="\images\downArr.png" alt="Scroll Down" />
           </div>
         </div>
       </div>
