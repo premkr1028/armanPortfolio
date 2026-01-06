@@ -52,7 +52,8 @@ const Contact = () => {
           className="talkBtn border-2 border-white flex items-center gap-2 px-4 py-2 rounded-full text-sm sm:text-base"
         >
           <MoveRight className="arr"/>
-          <span>let's work together</span>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arman3ditz@gmail.com"><span>let's work together</span></a>
+          
         </button>
       </div>
 

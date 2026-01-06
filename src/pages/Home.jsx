@@ -10,7 +10,7 @@ const Home = () => {
 
         {/* HERO SECTION */}
         <div className="w-screen min-h-[600px] flex flex-col lg:flex-row items-center">
-          
+
           {/* LEFT CONTENT */}
           <div className="taggg w-full lg:w-1/3 h-full flex flex-col justify-center items-center px-6 lg:pl-20 text-center lg:text-left">
             <div className="flex flex-col">
@@ -45,9 +45,12 @@ const Home = () => {
                     alt="After Effects"
                   />
                 </div>
-                <p className="border border-white rounded-full px-[10px] py-[4px] text-sm">
+                <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=arman3ditz@gmail.com"
+                  className="inline-block border border-white rounded-full px-3 py-1 text-sm no-underline z-50"
+                >
                   Contact
-                </p>
+                </a>
               </div>
             </div>
           </div>
